@@ -21,6 +21,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
+        body {
+            background-color: blanchedalmond;
+        }
+
         .header h1,
         p {
             font-family: Kalam;
@@ -34,6 +38,25 @@
             font-size: 15px;
             font-weight: 600;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        nav ul li:hover {
+            background-color: blanchedalmond;
+        }
+
+        nav #btn-login {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        nav #btn-login:hover {
+            background-color: #736357;
+            color: white;
+        }
+
+        nav .dropdown-item:hover {
+            background-color: #736357;
+            color: white;
         }
 
         .deskripsi {
@@ -56,27 +79,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item rounded">
+                    <li class="nav-item rounded-pill">
                         <a class="nav-link" aria-current="page" href="landingPage.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown rounded">
+                    <li class="nav-item dropdown rounded-pill">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
-                        <ul class="dropdown-menu rounded" aria-labelledby="navbarScrollingDropdown"
-                            style="font-size: 15px;">
-                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                            <li><a class="dropdown-item" href="#">The Team</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown"
+                            style="font-size: 15px; background-color: blanchedalmond; border-radius: 15px;">
+                            <li><a class="dropdown-item" style="font-weight: 600;" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" style="font-weight: 600;" href="#">The Team</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item rounded">
+                    <li class="nav-item rounded-pill">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item rounded">
-                        <a class="nav-link" href="#" style="margin-right: 3em;">Contact Us</a>
+                    <li class="nav-item rounded-pill">
+                        <a class="nav-link" href="#">Get in Touch</a>
                     </li>
-                    <button type="button" class="btn btn-light rounded-pill" style="font-weight: 600; font-size: 15px;">
+                    <button type="button" class="btn rounded-pill" id="btn-login"
+                        style="font-weight: 600; font-size: 15px; margin-left: 3em">
                         Login / Signup
                     </button>
                 </ul>
@@ -94,9 +118,9 @@
             </div>
             <div class="d-block col-4"
                 style="background-image: url('assets/background/ring.svg'); background-repeat: no-repeat; background-size: cover">
-                <div class="card shadow-lg p-3 mb-5"
-                    style="width: 17em; height: fit-content; transform: rotate(-9deg) translateX(69px)">
-                    <img src="assets/foto/foto-pengantin.png">
+                <div class="card bg-transparent border-0"
+                    style="width: 95%; transform: rotate(-6deg) translateX(-10px)">
+                    <img src="assets/foto/polaroid.png">
                 </div>
             </div>
         </div>
