@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN - Natural Planner</title>
 
+    <!-- Favicon Here -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/f7402773f7.js" crossorigin="anonymous"></script>
 
@@ -15,6 +18,24 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background: #736357;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(61, 49, 17);
+        }
+
         *,
         *::before,
         *::after {
@@ -312,7 +333,7 @@
     <section class="forms-section">
         <h1><img src="assets/logo/logo-weddorg.svg" class="mt-4"></h1>
         <div class="forms">
-            <a class="btn btn-secondary bg-transparent text-dark border-0 " data-bs-toggle="collapse"
+            <a class="btn btn-secondary rounded-pill bg-transparent text-dark border-0 " data-bs-toggle="collapse"
                 href="landingPage.html" role="button" aria-expanded="false" aria-controls="collapseList"
                 style="font-size: 16px;"><i class="fa-solid fa-angle-left">
                     back
